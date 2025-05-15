@@ -24,3 +24,12 @@ services:
 
 ###> symfony/mercure-bundle ###
 ###< symfony/mercure-bundle ###
+
+###> symfony/mailer ###
+  mailer:
+    image: mailhog/mailhog
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+###< symfony/mailer ###
+
